@@ -1,0 +1,15 @@
+﻿@model Parameters
+
+<h2></h2>
+
+@if (ViewData.ModelState["Num2"]?.Errors.Count > 0)
+{
+    <h3 class="text-danger">@ViewData.ModelState["Num2"].Errors[0].ErrorMessage</h3>
+}
+@if (Model?.Result != null)
+{
+    <h3>Result: @Model.Result</h3>
+}
+
+
+
